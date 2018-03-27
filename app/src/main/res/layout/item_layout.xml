@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:columnCount="4">
+
+      <TextView android:id="@+id/text_date"
+                android:layout_width="80dp"
+                android:layout_gravity="center_vertical"
+                android:text="วัน เดือน"
+                android:textSize="18sp" />
+
+      <TextView android:id="@+id/text_day_name"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center_vertical"
+                android:text="ชื่อวันสำคัญ"
+                android:textSize="18sp" />
+
+      <ImageButton android:id="@+id/button_update"
+                   android:layout_margin="5dp"
+                   android:src="@drawable/ic_edit"
+                   android:tint="@color/colorAccent" />
+
+      <ImageButton android:id="@+id/button_delete"
+                   android:layout_margin="5dp"
+                   android:src="@drawable/ic_delete"
+                   android:tint="@color/colorAccent" />
+
+      <!-- .เส้นแบ่งระหว่างรายการ -->
+      <TextView
+            android:layout_height="1dp"
+            android:layout_columnSpan="4"
+            android:layout_columnWeight="1"
+            android:background="#999" />
+</GridLayout>
